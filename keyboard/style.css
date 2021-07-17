@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+* p{
+    box-shadow: 4px 8px 0em .3em rgb(83, 83, 83);
+    color:#0b0b0c;
+    background-color: #abcef1;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    flex-direction: column;
+    background:linear-gradient(90deg,#95bbe2,#ffffff, #95bbe2) ;
+}
+h1{
+    font-size: 100px;
+    color: #0b0b0c;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-shadow: 3px 1px rgb(126, 123, 123);
+}
+h5{
+    position: relative;
+    bottom: -110px;
+    text-shadow: 1px 1px rgb(204, 200, 200);
+    font-size: 16px;
+    
+    
+}
+h6{
+    font-size: 16px;
+    text-shadow: 1px 1px rgb(126, 123, 123);
+}
+.keyboard-layout{
+    background-color: #388ee4;
+    width: 78%;
+    height:470px;
+    margin:0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 4px 8px 0em .3em rgb(83, 83, 83);             
+
+}
+.main-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main1-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.func1-keys{
+    display: flex;
+    width: 8.6%;
+    justify-content: space-evenly;
+    margin-right: 90px;
+    
+}
+
+.func1-keys p{
+    width: 70%;
+    line-height:54px;
+    
+    text-align: center;
+    border-radius: 5px;
+}
+.func2-keys{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    margin-right: 60px;
+    
+}
+
+.func2-keys p, .func3-keys p, .func4-keys p{
+    width: 19.9%;
+    line-height: 54px ;
+    
+    text-align: center;
+    border-radius: 5px;
+}
+.func3-keys{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    margin-right: 60px;
+   
+   
+}
+.func4-keys{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    
+    
+    
+}
+.func5-keys{
+   display: flex;
+   width: 66%;
+   justify-content: space-between;
+   
+    
+}
+
+.func5-keys p{
+    line-height: 54px;
+    text-align: center;
+    border-radius: 5px;
+    width: 29.7%;
+
+}
+/*****************************************j***********************************************************/
+
+.main-sub-container{
+    display: flex;
+    width: 78.15%;
+    margin-left: 20px;
+    
+    
+}
+.main-sub2-container{
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    
+    
+    
+}
+
+.main1-sub-container{
+    display: flex;
+    flex-direction: column;
+    width: 79.4%;
+    margin-left: -28px;
+    margin-top: -10px;
+
+}
+
+.main1-sub-a-keys{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.main1-sub-a-keys p{
+    width: 5%;
+    line-height: 54px;
+    text-align: center;
+   
+    border-radius: 5px;
+}
+.main1-sub-a-keys p:last-child{
+    width: 10%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+
+
+
+.main1-sub-b-keys{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.main1-sub-b-keys p:first-child{
+    width: 8%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+.main1-sub-b-keys p{
+    width: 5%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+.main1-sub-b-keys p:last-child{
+    width: 8%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+.main1-sub-c-keys{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -20px;
+}
+
+.main1-sub-c-keys p:first-child{
+    width: 11%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+
+.main1-sub-c-keys p{
+    width: 5%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+    
+}
+
+.main1-sub-c-keys p:last-child{
+    width: 11%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+
+
+.main1-sub-d-keys{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -5px;
+    margin-top: -20px;
+}
+
+.main1-sub-d-keys p:first-child{
+    width: 14%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+
+.main1-sub-d-keys p{
+    width: 5%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+    
+}
+
+.main1-sub-d-keys p:last-child{
+    width: 14%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+.main1-sub-e-keys{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -20px;
+}
+
+
+.main1-sub-e-keys p{
+    width: 8%;
+    line-height: 54px;
+    text-align: center;
+   
+    border-radius: 5px;
+    
+}
+
+.main1-sub-e-keys p:nth-child(4){
+    width: 30%;
+    line-height: 54px;
+    text-align: center;
+   
+    border-radius: 5px;
+}
+/***********************************************************************************************************/
+.main1-sub2-container{
+    display: flex;
+    width: 15%;
+    flex-direction: column;
+    margin-top: 10px;
+    
+
+}
+
+.main-sub2-a-keys{
+    display:flex;
+    flex-direction: column;
+    
+    
+}
+
+.main1-sub2-a1-keys p, .main1-sub2-a2-keys p, .other-arrows p, .up-arrow p{
+    width: 26%;
+    line-height: 54px;
+    text-align: center;
+    
+    border-radius: 5px;
+    
+}
+.main1-sub2-a1-keys{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: -20px;
+    
+}
+
+.main1-sub2-a2-keys{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: -20px;
+    
+}
+
+.main1-sub2-b-keys{
+    display:flex;
+    flex-direction: column;
+    margin-top: 71px;
+
+    
+    
+}
+.other-arrows, .up-arrow{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -20px;
+}
+
+
+
+
+
