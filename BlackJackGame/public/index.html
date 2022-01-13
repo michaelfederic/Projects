@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="winorlose">
+    <div class="container-window">
+        <div class="header">
+            <h1 id="game-header">Black Jack</h1>
+            <h2 id="game-header-message">Black Jack</h2>
+            <h2 id="bust-message">Bust</h2>
+            <h2 id="dealer-message">Dealer Wins</h2>
+            <p id="rule">There is only one rule, beat the dealer's hand! For rules on how to play, click <a href="https://bicyclecards.com/how-to-play/blackjack/" target="_blank">here</a>.</p>
+            <p id="choice"></p>
+        </div>
+        <div class="display-windows">
+            <div class="total-earnings">
+                <p style="display:flex;flex-direction:column;align-items:center;"id="earnings-header"><span> <img style="width:30px;display: block;"src="./images/money.png"></span>Bank</p>
+                <p id="earnings-window"> <span>$</span> <span id="bankmoney">500</span></p>
+            </div>
+            <div class="dealer-headers">
+                <p style="display: flex; flex-direction: column;align-items: center;" id="dealer-header"><span> <img style="width:30px;display: block;"src="./images/score.png"></span>Dealer Total</p>
+                <p id="dealer-window">0</p>
+            </div>
+            <div class="player-headers">
+                <p style="display: flex; flex-direction: column;align-items: center;"id="player-header"><span> <img style="width:30px;display: block;"src="./images/score.png"></span>Player total</p>
+                <p id="player-window">0</p>
+            </div>   
+        </div>
+        <div class="info-window">
+            <p id="dealer-info">
+                <img id="card0" src="" alt="">
+                <img id="card1"src="" alt="">
+            </p>
+            <p id="player-info">
+                <img id="card2"src="" alt="">
+                <img id="card3" src="" alt="">
+                
+            </p>
+        </div>
+        <div class="buttons">
+            <button id="hit">Hit</button>
+            <button id="stand">Stand</button>
+            <input type="text" id="input" size="10px" placeholder="" value="" name="id" autocomplete="off">
+            <input type="submit" name="id" id="submitbtn" value="Bet">
+            <button id="start-game">Start Game</button>
+            <button id="deal">Deal</button>
+            <button style="display: none" type="button" id="playagain"> play again</button>
+            
+        </div>
+    </div>
+    </div>
+    <script type='module' src="./javascript/script.js"></script>
+    <div style="color:white">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+</body>
+</html>

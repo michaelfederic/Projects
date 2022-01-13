@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    perspective: 1400px;
+    background-color: black;
+    transform-style: preserve-3d;
+}
+.winorlose{
+    width: 100%;
+    height: 100vh;
+    background: #159215;
+    border: 30px groove #7c5f34;
+    transform: rotateX(50deg);
+    
+    
+}
+.header{
+    position: absolute;
+    top:40%;
+    left: 30%;
+    right: 30%;
+    text-align: center;
+}
+
+
+
+#game-header{
+    font-size: 5vw;
+    color: #812d5b;
+    text-shadow: .03em .05em #4d4d4d;
+}
+
+#game-header-message{
+    font-size: 8.8vw;
+    color: #D4af37;
+    text-shadow: .05em .05em .05em #BF1932;
+    position: absolute;
+    top: 25%;
+    font-family: 'Bubblegum Sans', sans-serif;
+    display: none;
+}
+#game-header-message::after{
+    content: '!';
+}
+
+#winner-message{
+    color: rgb(255, 166, 0) ;
+    font-family: 'Bubblegum Sans', sans-serif;
+    text-shadow: 0 0 30px rgb(168, 168, 2);
+    font-size: 9vw;
+    position: absolute;
+    top: 25%;
+    right: 26%;
+    display: none;
+}
+
+
+#bust-message{
+    color: red;
+    font-family: 'Bubblegum Sans', sans-serif;
+    text-shadow: .05em .05em .05em #131212;
+    font-size: 9vw;
+    position: absolute;
+    top: 25%;
+    right: 26%;
+    display: none;
+
+}
+#player-message{
+    color: rgb(189, 248, 25);
+    font-family: 'Bubblegum Sans', sans-serif;
+    text-shadow: .05em .05em .05em #000000;
+    font-size: 6vw;
+    position: absolute;
+    top: 25%;
+    right: 13%;
+    display: none;
+
+}
+#dealer-message{
+    color: rgb(245, 125, 56);
+    font-family: 'Bubblegum Sans', sans-serif;
+    text-shadow: .05em .05em .05em #131212;
+    font-size: 5vw;
+    position: absolute;
+    top: 25%;
+    right: 13%;
+    display: none;
+
+}
+#tie-message{
+    color: rgb(255, 255, 255);
+    font-family: 'Bubblegum Sans', sans-serif;
+    text-shadow: .05em .05em .05em #030202;
+    font-size: 5vw;
+    position: absolute;
+    top: 25%;
+    right: 40%;
+    display: none;
+
+}
+
+
+#start-game{
+    transition:.9s;
+    color: rgb(48, 47, 47);
+    margin:0 30px;
+    background-color: rgb(255, 222, 36);
+    width: 8em;
+    border-radius: 5px;
+    
+    
+}
+
+#end{
+    transition:.9s;
+    color: rgb(48, 47, 47);;
+    margin:0 30px;
+    transform: scale(1.2);
+    background-color: rgb(255, 222, 36);
+    width: 8em;
+    border-radius: 5px;
+    
+    
+}
+#deal{
+    border-radius: 5px;
+    margin: 0 20px;
+    width: 4em;
+    background-color: rgb(255, 222, 36);
+    color: rgb(48, 47, 47);
+    transition:.9s;
+}
+
+#deal-end{
+    border-radius: 5px;
+    margin: 0 20px;
+    width: 4em;
+    background-color: rgb(255, 222, 36);
+    color: rgb(48, 47, 47);
+    transform: scale(1.2);
+    transition:.9s;
+}
+#hit,#stand, #submitbtn{
+border-radius: 5px;
+margin: 0 20px;
+width: 4em;
+background-color: rgb(255, 222, 36);
+color: rgb(48, 47, 47);
+}
+
+#hit:hover,#stand:hover , #deal:hover, #submitbtn:hover{
+    background-color: rgba(255, 222, 36,.9);
+
+}
+
+
+.buttons{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:;
+
+}
+#input{
+    text-align: center;
+    background-color: cadetblue;
+}
+.total-earnings{
+    position: absolute;
+    bottom:10%;
+    right:20%;
+    text-align: center;
+    transform-origin:bottom;
+    transform: rotateX(10deg) skewX(-5deg);
+    
+    
+}
+#earnings-window, #player-window, #dealer-window{
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    text-shadow: .03em .1em rgba(48, 48, 48, 0.8);
+}
+.dealer-headers{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    right: 10%;
+    transform-origin:bottom;
+    transform: rotateX(10deg) skewX(-4deg);
+}
+#ace{
+    display: inline;
+    color: red;
+}
+.player-headers{
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    left: 15%;
+    transform-origin:bottom;
+    transform: rotateX(10deg) skewX(3deg);
+}
+
+#player-header, #dealer-header, #earnings-header{
+    font-size:x-large;
+}
+#dealer-info img:first-child{
+    width: 10vw;
+    min-width: 85px;
+    max-width: 102px;
+
+    position: absolute;
+    top:7vh;
+    right:42%;
+    transform: rotateZ(1deg);
+}
+#dealer-info img:last-child{
+    width: 10vw;
+    min-width: 85px;
+    max-width: 102px;
+    position: absolute;
+    top:9vh;
+    right:50%;
+    transform: rotateZ(-20deg);
+}
+
+#card1,#card4,#card5,#card6{
+    width: 10vw;
+    min-width: 85px;
+    max-width: 102px;
+    z-index: 1;
+    position: absolute;
+    top:10vh;
+    right:50%;
+    transform: rotateZ(1deg) translateY(3px);
+    transition: .2s;
+}
+#card2{
+    width: 10vw;
+    min-width: 85px;
+    max-width: 102px;
+
+    position: absolute;
+    bottom:9vh;
+    right:40%;
+    transform: rotateZ(10deg);
+}
+#card3{
+    width: 10vw;
+    min-width: 85px;
+    max-width: 102px;
+    z-index: 1;
+    position: absolute;
+    bottom:10vh;
+    right:50%;
+    transform: rotateZ(1deg) translateY(3px);
+    transition: .2s;
+}
+
+#new-card{
+    width: 10vw;
+    min-width: 85px;
+    max-width: 102px;
+    z-index: 1;
+    position: absolute;
+    bottom:10vh;
+    right:45%;
+    transform: rotateZ(4deg) translateY(10px);
+    transition: .2s;
+}
+
